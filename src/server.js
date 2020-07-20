@@ -22,8 +22,8 @@ async function start() {
     const server = new grpc.Server({
         'grpc.max_send_message_length': 104857600,
         'grpc.max_receive_message_length': 104857600,
-        'grpc.max_connection_idle_ms': 5000,
-        'grpc.max_connection_age_ms': 240000, // MAX_INT = 2147483647
+        'grpc.max_connection_idle_ms': 3000,
+        'grpc.max_connection_age_ms': 6000, // MAX_INT = 2147483647
         'grpc.keepalive_time_ms': 2000,
         'grpc.keepalive_timeout_ms': 1000,
         'grpc.keepalive_permit_without_calls': 1,
